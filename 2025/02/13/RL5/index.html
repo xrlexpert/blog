@@ -19,17 +19,17 @@
     <meta name="description" content="回顾 在MC 算法中最重要的就是利用Mean Estimation 对 q(s,a)q(s,a)q(s,a) 进行估计。 其本质上是一个利用独立且同分布（i.i.d.）{xi}i&#x3D;1n\{x_i\}_{i&#x3D;1}^{n}{xi​}i&#x3D;1n​的sample来对随机变量X\mathcal{X}X 的期望估计 E(X)≈xˉ&#x3D;1n∑i&#x3D;1nxiE(\mathcal{X}) \approx \bar{x}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="RL5 随机近似与随机梯度下降">
-<meta property="og:url" content="https://xrlexpert.github.io/2025/02/13/RL5/index.html">
+<meta property="og:url" content="https://xingruilong-blog.top/2025/02/13/RL5/index.html">
 <meta property="og:site_name" content="Hirox&#39;s blog">
 <meta property="og:description" content="回顾 在MC 算法中最重要的就是利用Mean Estimation 对 q(s,a)q(s,a)q(s,a) 进行估计。 其本质上是一个利用独立且同分布（i.i.d.）{xi}i&#x3D;1n\{x_i\}_{i&#x3D;1}^{n}{xi​}i&#x3D;1n​的sample来对随机变量X\mathcal{X}X 的期望估计 E(X)≈xˉ&#x3D;1n∑i&#x3D;1nxiE(\mathcal{X}) \approx \bar{x}">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://xrlexpert.github.io/img/banner/rl.png">
+<meta property="og:image" content="https://xingruilong-blog.top/img/banner/rl.png">
 <meta property="article:published_time" content="2025-02-13T06:52:05.000Z">
 <meta property="article:modified_time" content="2025-03-18T02:33:10.699Z">
 <meta property="article:author" content="Hirox">
 <meta property="article:tag" content="Reinforcement learning">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://xrlexpert.github.io/img/banner/rl.png">
+<meta name="twitter:image" content="https://xingruilong-blog.top/img/banner/rl.png">
   
   
   
@@ -73,7 +73,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"xrlexpert.github.io","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
+    var CONFIG = {"hostname":"xingruilong-blog.top","root":"/","version":"1.9.4","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml"};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -384,7 +384,7 @@
   <div class="license-box my-3">
     <div class="license-title">
       <div>RL5 随机近似与随机梯度下降</div>
-      <div>https://xrlexpert.github.io/2025/02/13/RL5/</div>
+      <div>https://xingruilong-blog.top/2025/02/13/RL5/</div>
     </div>
     <div class="license-meta">
       
