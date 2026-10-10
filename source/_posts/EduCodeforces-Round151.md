@@ -207,7 +207,7 @@ for(int i=n-1;i>=1;i--)
 
 ## D-Rating System
 
-题意：给定一段分数变化序列$a_{i}$ ,$i$从1到n。你可以设定一个值k，score初始为0分。当score<k,时，$score+=a_{i}$ ,一旦score到达了k，从这之后，若 $score+a_{i}<k,则score=k$，否则$score+=a_{i}$ 。求问在最终分数最高情况下k的取值为多少。
+题意：给定一段分数变化序列$a_{i}$ ,$i$从1到n。你可以设定一个值k，score初始为0分。当score<k,时，$score+=a_{i}$ ,一旦score到达了k，从这之后，若 $score+a_{i}<k$，则 $score=k$，否则$score+=a_{i}$ 。求问在最终分数最高情况下k的取值为多少。
 
 
 

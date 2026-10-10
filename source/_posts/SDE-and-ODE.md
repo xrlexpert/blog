@@ -143,7 +143,7 @@ x(t)  = e^{\ln x(s)}\cdot e^{\int_{s}^{t} p(z)dz} = C\cdot e^{\int_{s}^{t} p(z)d
 $$
 
 
-再回过头来审视 $\color{red}{一般情况}$：
+再回过头来审视 $\textcolor{red}{\text{一般情况}}$：
 $$
 x'(t) = p(t)x(t) + q(t)
 $$

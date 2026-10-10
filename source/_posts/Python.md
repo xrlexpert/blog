@@ -5,7 +5,7 @@ date: 2023-06-28 22:16:14
 tags:
 - python
 categories:
-- [技术学习,Python]
+- [技术学习,语言]
 ---
 
 # Python学习

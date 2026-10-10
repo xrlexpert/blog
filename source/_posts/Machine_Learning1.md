@@ -43,7 +43,7 @@ $goal:minize(J(w,b))$
 首先需要复习一下方向导数和梯度的概念：
 **方向导数**：若函数$z=f(x,y)$在$P(x,y)$ 某一邻域有定义，自P点沿周围360度任一方向引出有向直线L，定义方向导数为
 
-$$ \frac{\alpha z}{\alpha l} |_{(x,y)} = \lim_{\rho \to 0} \frac{\Delta z}{\Delta 自变量}= \lim_{\rho \to 0} \frac{f(x+\Delta x,y+\Delta y)-f(x,y)}{\sqrt{x^{2}+y^{2}}} (\rho =\sqrt{x^{2}+y^{2}})$$  
+$$ \frac{\alpha z}{\alpha l} |_{(x,y)} = \lim_{\rho \to 0} \frac{\Delta z}{\Delta x}= \lim_{\rho \to 0} \frac{f(x+\Delta x,y+\Delta y)-f(x,y)}{\sqrt{x^{2}+y^{2}}} (\rho =\sqrt{x^{2}+y^{2}})$$  
 
 特别地，当$z=f(x,y)$在$P(x,y)$ 可微分，则$z=f(x,y)$沿任一方向的方向导数都存在，且
 

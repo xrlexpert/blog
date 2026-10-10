@@ -1,10 +1,10 @@
 ---
-title: Solidity学习
+title: Solidity
 date: 2023-04-08 18:57:51
 tags:
 - solidity
 categories:
-- 技术学习
+- [技术学习,语言]
 index_img: /img/banner/blockchain.jpg
 ---
 

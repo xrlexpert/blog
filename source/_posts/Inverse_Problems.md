@@ -47,7 +47,7 @@ $$
 
 问题定义：
 
-已知观测 $y$, 其符合 $y = \mathcal A(x) + \sigma z， z \sim N(0，I)$， 如何找到对应于该观测 $y$ 的原始数据点 $x$
+已知观测 $y$, 其符合 $y = \mathcal A(x) + \sigma z,\ z \sim N(0,I)$， 如何找到对应于该观测 $y$ 的原始数据点 $x$
 
 * $\mathcal A$ 为观测算子
 * $z$ 为观测噪声
