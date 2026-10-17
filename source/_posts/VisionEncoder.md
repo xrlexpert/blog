@@ -730,3 +730,7 @@ Stage1：接入LLM时候是一起训练的，并没有区分S1 projector , S2 �
 短视频 SFT
 
 详细视频描述数据
+
+## CoVisco
+
+## AdaSpark
